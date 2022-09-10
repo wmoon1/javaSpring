@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Participant Update</title>
+<link th:href="@{/styles/css/StyleSheet.css}" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="#" th:action="@{/update/{id}(id=${participant.partId})}" th:object="${participant}" method="post">
+
+    <label for="name">Partipant name:</label><br>
+	  <input style="width:400px; height:20px;" type="text" id="name" name="name" placeholder="Enter the Participant Name" field="*{name}" required/><br><br>
+	  
+	  <label for="price">SchoolGrade:</label><br>
+	  <input style="width:400px; height:20px;" type="text" id="grade" name="grade" placeholder="Enter the Grade" field="*{grade}" required/><br><br>
+	  
+	  <label for="dob">DOB:</label><br>
+	  <input style="width:400px; height:20px;" type="date" id="dob" name="dob" placeholder="Enter the Dob" field="*{dob}" required/><br><br>
+	   
+	  <label for="age">Age:</label><br>
+	  <input style="width:400px; height:20px;" type="text" id="age" name="age" placeholder="Enter the Age" field="*{age}" required/><br><br>
+	   
+	  <label for="gender">Gender:</label><br>
+	  <input style="width:400px; height:20px;" type="text" id="gender" name="gender" placeholder="Enter the Gender" field="*{gender}" required/><br><br>
+	   
+	  <label for="email">Email:</label><br>
+	  <input style="width:400px; height:20px;" type="text" id="Email" name="Email" placeholder="Enter the Email" field="*{Email}" required/><br><br>
+    
+    </br>
+    <input type="submit" value="Edit Department">
+</form> 
+</body>
+</html>
