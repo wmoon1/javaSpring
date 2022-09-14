@@ -4,24 +4,25 @@ h1 {
 	text-transform: capitalize;
 	text-align: center;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	background-color: green;
+	
+}
+div {
+	width:980px; 
+	margin-left:auto; 
+	margin-right:auto;
+}
 
+table {
+	text-align: center;
+    font-family: verdana;
+}
+
+h2 {
+	font-family: garamond;
 }
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #aeb1b9;
 }
-#allform {
-	background-color: #ffff00;
-}
-#allpage{
-	text-align:center;
-}
-#btnAdd
-{
-	font-size:28px;
-	background-color:yello;
-	border: solid 2px yello;
-	border-radius: 10px;
-	padding:10px 10px;
-}
+

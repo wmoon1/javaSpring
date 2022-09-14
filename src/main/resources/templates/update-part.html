@@ -3,10 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Participant Update</title>
-<link th:href="@{/styles/css/StyleSheet.css}" rel="stylesheet" type="text/css">
+<link th:href="@{/styles/css/Register.css}" rel="stylesheet" type="text/css">
 </head>
 <body>
-<form action="#" th:action="@{/update/{id}(id=${participant.partId})}" th:object="${participant}" method="post">
+<div id ="allPage"style="width:480px; margin-left:auto; margin-right:auto;">
+<header>
+<h1>Update</h1>
+</header>
+
+<form id="allform" action="#" th:action="@{/update/{id}(id=${participant.partId})}" th:object="${participant}" method="post">
 
     <label for="name">Partipant name:</label><br>
 	  <input style="width:400px; height:20px;" type="text" id="name" name="name" placeholder="Enter the Participant Name" field="*{name}" required/><br><br>
@@ -27,7 +32,7 @@
 	  <input style="width:400px; height:20px;" type="text" id="Email" name="Email" placeholder="Enter the Email" field="*{Email}" required/><br><br>
     
     </br>
-    <input type="submit" value="Edit Department">
+    <input id="btnAdd" type="submit" value="Edit Department">
 </form> 
 </body>
 </html>
