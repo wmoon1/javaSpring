@@ -13,5 +13,5 @@ Contributors: Wooram Moon
 
 Features
 Saving the department for participant
-Easy to search the paticipant who saved from database
+Easy to search the paticipant who saved from database for now
 
